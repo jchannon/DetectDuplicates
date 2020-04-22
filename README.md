@@ -1,4 +1,4 @@
-# DetectDuplicates
+# DetectDuplicates [![NuGet Version](http://img.shields.io/nuget/v/DetectDuplicates.svg?style=flat)](https://www.nuget.org/packages/DetectDuplicates)
 
 A .NET Global tool that scans csproj files for duplicate package references
 
