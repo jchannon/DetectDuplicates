@@ -2,3 +2,6 @@ bin/
 obj/
 nupkg/
 .idea/
+.fake
+.ionide
+.vscode
