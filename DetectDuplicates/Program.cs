@@ -19,7 +19,10 @@ namespace DetectDuplicates
 
             bool duplicatesFound = false;
 
-            var files = Directory.GetFiles(path, "*.csproj", SearchOption.AllDirectories);
+            var files = "*.csproj;*.fsproj".Split(';')
+                .SelectMany(g => Directory.EnumerateFiles(path, g, SearchOption.AllDirectories));
+            
+            //var files = Directory.GetFiles(path, "*.csproj", SearchOption.AllDirectories);
             foreach (var file in files)
             {
                 var fileName = Path.GetFileName(file);
